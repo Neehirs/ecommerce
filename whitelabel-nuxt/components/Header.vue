@@ -62,7 +62,7 @@
   }
   
   .nav ul li a:hover {
-    color: #ffcc00;
+    color: #39a88c;
   }
   
   .actions {
