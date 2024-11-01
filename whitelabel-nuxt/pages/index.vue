@@ -1,6 +1,6 @@
 <!-- pages/index.vue -->
 <template>
-    <div>
+    <div class="Mod">
       <section class="hero">
         <div class="hero-content">
           <h1>Bem-vindo ao nosso E-commerce!</h1>
@@ -59,6 +59,9 @@
   </script>
   
   <style scoped>
+  .Mod {
+    background-color: transparent;
+  }
   .hero {
     background-image: url('/images/hero-bg.jpg'); /* Substitua pela sua imagem */
     background-size: cover;

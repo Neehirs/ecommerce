@@ -1,11 +1,11 @@
 <!-- layouts/default.vue -->
 <template>
-    <div>
-      <Header />
+    <div class="Fundo">
+      <Header/>
       <main>
         <slot /> <!-- Aqui as páginas serão renderizadas -->
       </main>
-      <Footer />
+      <Footer/>
     </div>
   </template>
   
@@ -15,6 +15,11 @@
   </script>
   
   <style scoped>
+  .Fundo {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url('@/images/Fundo.jpg');
+  }
   main {
     min-height: 80vh;
     padding: 2rem;
