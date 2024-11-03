@@ -26,6 +26,7 @@
     {
         id: 1,
         title: 'Festival de Gastronomia Urbana',
+        preco: 10
     },
     {
         id: 2,

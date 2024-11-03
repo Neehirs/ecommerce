@@ -18,7 +18,7 @@
           <div class="product-card" v-for="product in featuredProducts" :key="product.id">
             <img :src="product.image" :alt="product.name" />
             <h3>{{ product.name }}</h3>
-            <p>R$ {{ product.price.toFixed(2) }}</p>
+            <p>R$ {{ product.preco.toFixed(2) }}</p>
             <NuxtLink to="/produtos" class="btn btn-product">Adicionar ao Carrinho</NuxtLink>
           </div>
         </div>
