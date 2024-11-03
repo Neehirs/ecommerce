@@ -1,6 +1,6 @@
 <!-- pages/index.vue -->
 <template>
-    <div class="Mod">
+    <div class="Mod2">
       <section class="hero">
         <div class="hero-content">
           <h1>Bem-vindo ao nosso E-commerce!</h1>
@@ -46,9 +46,10 @@
   <script setup>
   // Simulação de produtos em destaque e depoimentos. Em um projeto real, você pode buscar isso de uma API.
   const featuredProducts = [
-    { id: 1, name: 'Produto 1', price: 99.99, image: '/images/produto1.jpg' },
-    { id: 2, name: 'Produto 2', price: 149.99, image: '/images/produto2.jpg' },
-    { id: 3, name: 'Produto 3', price: 79.99, image: '/images/produto3.jpg' },
+    { id: 1, name: 'Produto 1', preco: 99.99, image: '/images/produto1.jpg' },
+    { id: 2, name: 'Produto 2', preco: 149.99, image: '/images/produto2.jpg' },
+    { id: 3, name: 'Produto 3', preco: 79.99, image: '/images/produto3.jpg' },
+    { id: 4, name: 'Produto 4', preco: 99.99, image: '/images/produto3.jpg' },
   ];
   
   const testimonials = [
@@ -62,8 +63,11 @@
   .Mod {
     background-color: transparent;
   }
+  .Mod2 {
+    align-items: center;
+  }
   .hero {
-    background-image: url('/images/hero-bg.jpg'); /* Substitua pela sua imagem */
+    background-image: url('/images/Fundo.jpg'); /* Substitua pela sua imagem */
     background-size: cover;
     background-position: center;
     height: 70vh;
@@ -110,13 +114,22 @@
   }
   
   .featured-products, .categories, .testimonials {
-    padding: 2rem;
+    background-image: url('/images/Fundo.jpg'); /* Substitua pela sua imagem */
+    background-size: cover;
+    background-position: center;
+    height: 70vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    padding: 1rem;
   }
   
   .product-grid, .category-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
     gap: 1rem;
+    justify-content: center;
   }
   
   .product-card, .category-card {

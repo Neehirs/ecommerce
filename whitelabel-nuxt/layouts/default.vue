@@ -18,7 +18,7 @@
   .Fundo {
     background-position: center;
     background-repeat: no-repeat;
-    background-image: url('@/images/Fundo.jpg');
+    background-image: url('./images/Fundo.jpg');
   }
   main {
     min-height: 80vh;
